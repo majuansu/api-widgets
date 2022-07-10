@@ -1,9 +1,23 @@
+/************ Videos section  ***********/
+
 .video-item {
-  display: flex !important;
-  align-items: center !important;
+  display: flex;
+  align-items: center;
   cursor: pointer;
 }
 
 .video-item.item img {
   max-width: 180px;
 }
+
+/************ Photos section  ***********/
+/* .photo-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+  grid-auto-rows: auto;
+}
+
+.photo-list img {
+  width: 100%;
+} */

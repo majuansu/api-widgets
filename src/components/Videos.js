@@ -9,17 +9,17 @@ const Videos = () => {
   const [selectedVideo, setSelectedVideo] = useState(null);
 
   // Make API request
-  const doSearch = async (term) => {
+  const searchTerm = async (term) => {
     const res = await youtube.get("/search", {
       params: { q: term },
     });
     setVideos(res.data.items);
   };
 
-  //  set default search
+  //  set default search term
   const defaultTerm = "cat";
   useEffect(() => {
-    doSearch(defaultTerm);
+    searchTerm(defaultTerm);
   }, []);
 
   // set default selected video
@@ -29,7 +29,7 @@ const Videos = () => {
 
   return (
     <div className="videos ui container">
-      <SearchBar title="videos" onSubmit={doSearch} />
+      <SearchBar title="videos" onSubmit={searchTerm} />
 
       <div className="ui grid">
         <div className="ui row">

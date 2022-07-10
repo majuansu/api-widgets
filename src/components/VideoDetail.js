@@ -1,7 +1,7 @@
 import React from "react";
 
 const VideoDetail = ({ video }) => {
-  // when no video is returned yet
+  // when not receive API response
   if (!video) {
     return <div>Loading...</div>;
   }
