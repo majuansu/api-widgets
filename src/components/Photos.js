@@ -16,7 +16,6 @@ const Photos = () => {
 
   //  set default search term
   const defaultTerm = "cat";
-
   useEffect(() => {
     searchTerm(defaultTerm);
   }, []);
