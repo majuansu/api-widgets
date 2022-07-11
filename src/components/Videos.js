@@ -8,7 +8,13 @@ const Videos = () => {
   const [videos, setVideos] = useState([]);
   const [selectedVideo, setSelectedVideo] = useState(null);
 
-  // Make API request
+  //  Set default search term
+  const defaultTerm = "cat";
+  useEffect(() => {
+    searchTerm(defaultTerm);
+  }, []);
+
+  // Get results from API
   const searchTerm = async (term) => {
     const res = await youtube.get("/search", {
       params: { q: term },
@@ -16,13 +22,7 @@ const Videos = () => {
     setVideos(res.data.items);
   };
 
-  //  set default search term
-  const defaultTerm = "cat";
-  useEffect(() => {
-    searchTerm(defaultTerm);
-  }, []);
-
-  // set default selected video
+  // Set default selected video
   useEffect(() => {
     setSelectedVideo(videos[0]);
   }, [videos]);
