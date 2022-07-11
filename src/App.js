@@ -5,6 +5,7 @@ import Photos from "./components/Photos";
 import Wikipedia from "./components/Wikipedia";
 import Translate from "./components/Translate";
 import Route from "./components/Route";
+import Header from "./components/Header";
 
 const App = () => {
   return (
@@ -13,7 +14,7 @@ const App = () => {
       {/* <Photos /> */}
       {/* <Wikipedia /> */}
       {/* <Translation /> */}
-
+      <Header />
       <Route route="/">
         <Photos />
       </Route>

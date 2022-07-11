@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
-import InputSearch from "./InputSearch";
+import Input from "./Input";
 import Dropdown from "./Dropdown";
-import axios from "axios";
 import google from "../apis/google";
 
 // Data: language options
@@ -40,7 +39,7 @@ const Translation = () => {
 
   return (
     <div className="translation ui container ">
-      <InputSearch label="Enter some text" onChange={setText} />
+      <Input label="Enter some text" onChange={setText} />
       <Dropdown
         label="language"
         options={options}
@@ -49,7 +48,7 @@ const Translation = () => {
       />
       <div className="result">
         <hr></hr>
-        <h3>Output</h3>
+        <h4>Output</h4>
         <p>{translated}</p>
       </div>
     </div>
