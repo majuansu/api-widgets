@@ -40,9 +40,9 @@ const Translation = () => {
 
   return (
     <div className="translation ui container ">
-      <InputSearch title="text" onChange={setText} />
+      <InputSearch label="Enter some text" onChange={setText} />
       <Dropdown
-        title="language"
+        label="language"
         options={options}
         selected={language}
         onSelectedChange={setLanguage}

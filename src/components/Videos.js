@@ -29,7 +29,7 @@ const Videos = () => {
 
   return (
     <div className="videos ui container">
-      <SearchBar title="videos" onSubmit={searchTerm} />
+      <SearchBar label="Search a video" onSubmit={searchTerm} />
 
       <div className="ui grid">
         <div className="ui row">

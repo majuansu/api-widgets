@@ -22,7 +22,7 @@ const Photos = () => {
 
   return (
     <div className="photos ui container">
-      <SearchBar title="photos" onSubmit={searchTerm} />
+      <SearchBar label="Search a photo" onSubmit={searchTerm} />
       <PhotoList photos={photos} />
     </div>
   );

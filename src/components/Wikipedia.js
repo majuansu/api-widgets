@@ -23,7 +23,7 @@ const Wikipedia = () => {
 
   return (
     <div className="wikipedia ui container">
-      <SearchBar title="wikipedia" onSubmit={searchTerm} />
+      <SearchBar label="Search a term" onSubmit={searchTerm} />
       <WikiList results={results} />
     </div>
   );

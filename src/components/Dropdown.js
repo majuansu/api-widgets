@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 
-const Dropdown = ({ title, options, selected, onSelectedChange }) => {
+const Dropdown = ({ label, options, selected, onSelectedChange }) => {
   const [open, setOpen] = useState(false);
 
   // Close dropdown when click outside the menu
@@ -36,7 +36,7 @@ const Dropdown = ({ title, options, selected, onSelectedChange }) => {
   return (
     <div className="drop-down ui form ">
       <div className="field">
-        <label className="label">Select a {title}</label>
+        <label className="label">Select a {label}</label>
         <div
           className={`ui selection dropdown ${open ? "active visible" : ""}`}
           onClick={() => {

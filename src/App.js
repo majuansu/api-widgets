@@ -1,9 +1,10 @@
+import "./App.css";
 import React from "react";
 import Videos from "./components/Videos";
 import Photos from "./components/Photos";
-import "./App.css";
 import Wikipedia from "./components/Wikipedia";
-import Translation from "./components/Translation";
+import Translate from "./components/Translate";
+import Route from "./components/Route";
 
 const App = () => {
   return (
@@ -11,9 +12,23 @@ const App = () => {
       {/* <Videos /> */}
       {/* <Photos /> */}
       {/* <Wikipedia /> */}
-      <Translation />
-      <hr></hr>
-      App Component
+      {/* <Translation /> */}
+
+      <Route route="/">
+        <Photos />
+      </Route>
+
+      <Route route="/videos">
+        <Videos />
+      </Route>
+
+      <Route route="/translate">
+        <Translate />
+      </Route>
+
+      <Route route="/wikipedia">
+        <Wikipedia />
+      </Route>
     </div>
   );
 };

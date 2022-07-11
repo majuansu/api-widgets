@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const InputSearch = ({ title, onChange }) => {
+const InputSearch = ({ label, onChange }) => {
   const [term, setTerm] = useState("");
   const [debouncedTerm, setDebouncedTerm] = useState("");
 
@@ -21,10 +21,9 @@ const InputSearch = ({ title, onChange }) => {
   return (
     <div className="input-search ui form">
       <div className="field">
-        <label>Search {title}</label>
+        <label>{label}</label>
         <input
           type="text"
-          placeholder="Enter a keyword"
           value={term}
           onChange={(e) => setTerm(e.target.value)}
         />
