@@ -7,7 +7,7 @@ const Wikipedia = () => {
   const [results, setResults] = useState([]);
 
   // Set a default search term for API
-  const defaultTerm = "cat";
+  const defaultTerm = "nature";
   useEffect(() => {
     searchTerm(defaultTerm);
   }, []);

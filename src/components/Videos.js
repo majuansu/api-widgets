@@ -9,7 +9,7 @@ const Videos = () => {
   const [selectedVideo, setSelectedVideo] = useState(null);
 
   //  Set default search term
-  const defaultTerm = "cat";
+  const defaultTerm = "nature";
   useEffect(() => {
     searchTerm(defaultTerm);
   }, []);

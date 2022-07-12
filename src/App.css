@@ -1,8 +1,8 @@
 /************ Videos section  ***********/
 
 .video-item {
-  display: flex;
-  align-items: center;
+  display: flex !important;
+  align-items: flex-start !important;
   cursor: pointer;
 }
 
@@ -20,5 +20,5 @@
 .photo-list img {
   /* width: 250px; */
   width: 100%;
-  grid-row-end: span 2;
+  /* grid-row-end: span 10; */
 }

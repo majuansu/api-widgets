@@ -1,3 +1,10 @@
+# About This Project
+
+This project is a practice project for React, Hooks and APIs.\
+It contains 4 pages (widgets), each of which has been connected to API to fetch data, allowing user to search for Youtube videos, Unsplash photos, Wikipedia posts and perform Google language translation.\
+
+CSS is not a main focus of this project. Simple styles are applied using Semantic UI (https://semantic-ui.com/).\
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
